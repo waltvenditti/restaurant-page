@@ -10,13 +10,15 @@ function genMainPage() {
     header.textContent = 'USA COUNTRY DINER';
     img.src = MainImg;
     img.style['height'] = '400px';
-    copy.textContent = "Try the most legendary food in town.";
+    copy.textContent = "Try the most legendary food in the AR-114/AR-530 Junction area.";
     contentDiv.setAttribute('id', 'content');
+    copy.setAttribute('id', 'main-subtext')
+    header.setAttribute('id', 'menu-header')
 
     body.appendChild(contentDiv);
     contentDiv.appendChild(header);
-    contentDiv.appendChild(img);
     contentDiv.appendChild(copy);
+    contentDiv.appendChild(img);
 }
 
 export default genMainPage;
